@@ -11,4 +11,4 @@ modules:
   # Decode / Control stage modules
   regfile:    {source_files: [rtl/regfile.sv]}
   extend:     {source_files: [rtl/extend.sv]}
-  controller: {source_files: [rtl/controller.sv]}
+  controller: {source_files: [rtl/controller.sv]} 
