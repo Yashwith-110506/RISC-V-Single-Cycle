@@ -1,7 +1,14 @@
-stage: fetch
+stage: decode_control
+
 modules:
-  flopr: {source_files: [rtl/flopr.sv]}
+  # Fetch stage modules
+  adder:   {source_files: [rtl/adder.sv]}
+  mux2:    {source_files: [rtl/mux2.sv]}
   flopenr: {source_files: [rtl/flopenr.sv]}
-  adder: {source_files: [rtl/adder.sv]}
-  mux2: {source_files: [rtl/mux2.sv]}
-  imem: {source_files: [rtl/imem.sv]}
+  flopr:   {source_files: [rtl/flopr.sv]}
+  imem:    {source_files: [rtl/imem.sv]}
+
+  # Decode / Control stage modules
+  regfile:    {source_files: [rtl/regfile.sv]}
+  extend:     {source_files: [rtl/extend.sv]}
+  controller: {source_files: [rtl/controller.sv]}
