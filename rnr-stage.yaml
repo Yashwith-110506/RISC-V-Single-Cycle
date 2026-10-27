@@ -1,0 +1,7 @@
+stage: fetch
+modules:
+  flopr: {source_files: [rtl/flopr.sv]}
+  flopenr: {source_files: [rtl/flopenr.sv]}
+  adder: {source_files: [rtl/adder.sv]}
+  mux2: {source_files: [rtl/mux2.sv]}
+  imem: {source_files: [rtl/imem.sv]}
